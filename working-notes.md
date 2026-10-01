@@ -5,7 +5,13 @@ Working notes
 Wilken Aldair Misael, PhD
 IPR/PUCRS
 
+Ramal 8363
+
+Sala dos computadores 407
+
 ----------------------------------------
+
+
 
 Terça, 15 de setembro de 2026:
 
@@ -313,17 +319,23 @@ Quarta, 30 de setembro de 2026
 
 Visita aos experimentos.
 
-- [ ] quantum espresso:
+Discussão sobre os softwares que vamos pedir.
 
-    - [ ] como obtenho a ELF, cargas de Bader, propriedades de transporte
-    
-    - [ ] ver como faco NEB
+- [x] quantum espresso:
 
-    - [ ] como faco aimd
+o calculo pra relaxacao e scf do co2@li100 perpendicular terminou. agora estou fazendo o calculo na configuracao paralela. espero ver mudanca no angulo da ligacao.
 
-- [ ] Agora que vou rodar cálculos no Desktop, pensar em como organizar workflow (github, etc)
+    - [x] como obtenho a ELF, cargas de Bader, propriedades de transporte
+
+    ELF: tem nativo no QE
+    Cargas de Bader: pra vasp e castep tem como usar o codigo a seguir https://theory.cm.utexas.edu/henkelman/code/bader/
+
+
+- [x] Agora que vou rodar cálculos no Desktop, pensar em como organizar workflow (github, etc)
 
 Vou deixar todos os arquivos no OneDrive da PUC, isso vai me permitir fazer o pós processamento na minha própria máquina.
+
+Os working notes Vou usar o github pelo navegador
 
 -----
 
@@ -331,24 +343,48 @@ Quinta, 1 de outubro de 2026
 
 Reunião de levantamento de recursos.
 
+Troca de emails sobre o vasp.
+
+Envio do teste da ISO para certificacao.
+
 - [ ] Trabalhar na review do artigo da Moyra
 
     dar uma olhada no texto dela e começar a fazer revisões (se necessário)
 
-- [ ] Trabalhar no orca e Gaussian:
+quantum espresso:
 
-    - [ ] continuar trabalhando nos calculos aimd e qmmm do li
+    - [ ] faça o nscf, calculo de bandas, pdos, estrutura de bandas, elf, gere os orbitais (inputs a serem feitos)
 
+materials project:
+
+    para os calculos periodicos tem como usar o castep. fiz os primeiros testes com si. consegui obter a estrutura de bandas, dos, o que ficou pra um proximo dia é plotar elf e plotar orbitais.
+    
 -----
 Sexta, 2 de outubro de 2026
 
+dar uma investigada pra descobrir se dftb é uma opcao razoavel.
+
 - [ ] Wrap up
+
+quantum espresso:
+
+    - [ ] ver como faco NEB
+
+    - [ ] como faco aimd
+
+materials project:
+
+    ver como plotar elf e orbitais.
+
+    ver o modulo de dinamica.
+
+    investigar a velocidade das simulacoes.
 
 -----
 
 # To-do list
 
-
+Pedir certificado do curso de LGPD ao RH
 
 ## Simulações
 
@@ -369,6 +405,14 @@ quantum espresso:
     - [ ] ver como faco NEB
 
     - [ ] como faco aimd
+
+gaussian:
+
+- [ ] oniom
+
+orca:
+
+- [ ] neb
 
 lammps:
 
